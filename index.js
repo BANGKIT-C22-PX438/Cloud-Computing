@@ -33,3 +33,10 @@ function checkHashPassword(userPassword,salt) {
     var passwordData = sha512(userPassword,salt)
     return passwordData
 }
+
+// Create Express
+var app = express
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended: true}))
+
+
