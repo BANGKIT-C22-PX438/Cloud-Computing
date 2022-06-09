@@ -39,4 +39,18 @@ var app = express
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
+// Mongodb user
+var MongoClient = mongodb.MongoClient;
 
+// URL
+var url = 'mongodb://localhost:27017' // change when deploy
+
+MongoClient.connect(url,{useNewUrlParser: true}, function(err,client){
+    if(err)
+    console.log('Unbale connect mongodb', err)
+    else{
+        app.listen(3000, ()=>{
+            console.log('Connected to Mongodb, running port 3000')
+        })
+    }
+})
