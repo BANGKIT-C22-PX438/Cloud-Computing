@@ -1,0 +1,25 @@
+{
+  "name": "cloud-computing",
+  "version": "1.0.0",
+  "description": "Auth & Login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waynuts/Cloud-Computing.git"
+  },
+  "author": "Ridwan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waynuts/Cloud-Computing/issues"
+  },
+  "homepage": "https://github.com/waynuts/Cloud-Computing#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "crypto": "^1.0.1",
+    "express": "^4.18.1",
+    "mongodb": "^4.7.0"
+  }
+}
